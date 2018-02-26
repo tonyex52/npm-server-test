@@ -1,0 +1,22 @@
+{
+  "name": "npm-server-test",
+  "version": "1.0.0",
+  "description": "npm server testing",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tonyex52/npm-server-test.git"
+  },
+  "author": "Tony",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tonyex52/npm-server-test/issues"
+  },
+  "homepage": "https://github.com/tonyex52/npm-server-test#readme",
+  "publishConfig": {
+    "registry": "http://192.168.21.82:9487/"
+  }
+}
