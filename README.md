@@ -17,7 +17,7 @@
 ### storybook
 - npm install or use yarn
     - ```npm i --save-dev @storybook/react```
-    - ```npm i --save react react-dom```
+    - ```npm i --save react react-dom webpack style-loader css-loader sass-loader less-loader```
     - ```npm i --save-dev babel-core```
 
 - add package.json scripts
@@ -29,7 +29,7 @@
 }
 ```
 
-- creat storybook config in .storybook folder
+- create storybook config in .storybook folder
 ```javascript
 import { configure } from '@storybook/react';
 
@@ -39,4 +39,21 @@ function loadStories() {
 }
 
 configure(loadStories, module);
+```
+
+- create webpack.config.js in .storybook
+```javascript
+const path = require('path');
+
+module.exports = {
+  module: {
+    rules: [
+      {
+        test: /\.scss$/,
+        loaders: ["style-loader", "css-loader", "sass-loader", "less-loader"],
+        include: path.resolve(__dirname, '../')
+      }
+    ]
+  }
+}
 ```
