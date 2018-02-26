@@ -19,7 +19,9 @@
   "publishConfig": {
     "registry": "http://192.168.21.82:9487/"
   },
-  "dependencies": {
-    "npm-server-test": "^1.0.1"
+  "dependencies": {},
+  "devDependencies": {
+    "@storybook/react": "^3.3.14",
+    "babel-core": "^6.26.0"
   }
 }
