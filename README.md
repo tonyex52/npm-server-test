@@ -4,21 +4,23 @@
     - ```npm install -g sinopia```
     - ```yarn global add sinopia```
 
+- run the npm registry server
+    - ```sinopia -l http://IP:PORT```
+
 - set registry url
     - ```npm config edit```
-    - set registry to ```https://IP:PORT```
+    - set registry to ```http://IP:PORT```
 
 - initially, add user to the npm registry server
-    - ```npm adduser --registry https://IP:PORT```
+    - ```npm adduser --registry http://IP:PORT```
 
 - reset the registry url
     - ```https://registry.npmjs.org/```
 
 ### storybook
 - npm install or use yarn
-    - ```npm i --save-dev @storybook/react```
+    - ```npm i --save-dev @storybook/react @storybook/addon-actions @storybook/addon-knobs @storybook/addon-links @storybook/addon-options babel-core```
     - ```npm i --save react react-dom webpack style-loader css-loader sass-loader less-loader```
-    - ```npm i --save-dev babel-core```
 
 - add package.json scripts
 ```json
