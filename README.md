@@ -17,6 +17,9 @@
 - reset the registry url
     - ```https://registry.npmjs.org/```
 
+- create symbolic link in node_module to export package
+    - npm link
+
 ### storybook
 - npm install or use yarn
     - ```npm i --save-dev @storybook/react @storybook/addon-actions @storybook/addon-knobs @storybook/addon-links @storybook/addon-options babel-core```
