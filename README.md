@@ -140,10 +140,10 @@ for my example folder
 
 ## build the module and creact the symbolic link node_module
 - enter the following command
-```cmd
+``` bash
 yarn prepublish
 npm link
 ```
 
 ## now, you can publish it & enjoy it!
-``npm publish````
+```npm publish```
