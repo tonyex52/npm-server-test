@@ -7,7 +7,7 @@
 - run the npm registry server with your url
     - ```sinopia -l http://IP:PORT```
 
-- set registry url(it's not nessasary, you just use ```yarn add --registry http://IP:PORT PACKAGE_NAME```)
+- set registry url(it's not necessary, you just use ```yarn add --registry http://IP:PORT PACKAGE_NAME```)
     - ```npm config edit```
     - set registry to ```http://IP:PORT```
 
